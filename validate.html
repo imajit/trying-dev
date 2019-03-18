@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>email check</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+	<style type="text/css">
+		label{
+			position: relative;
+			padding: 4px;
+			width: 50px;
+			float: left;
+		}	
+		input{
+			height:40px;
+			font-style: sans-serif;
+			font-size: 120%;
+			border-radius: 5%;
+			border:2px grey solid;
+			text-align: center;
+		}	
+		div {
+			  display: flex;
+			  align-items: center;
+  			justify-content: center;
+	}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+<label for="email">Email</label><input type="text" name="email" placeholder="ajitmujumdar25999@gmail.com" id="aaa">
+</div>
+<div><button>Submit</button></div>
+
+<script type="text/javascript">
+	var regex1=/.com/;
+	var regex2=/@/;
+	var string="";
+	$("button").click(function(){
+	string=document.getElementById("aaa").value;
+	if(string.match(regex1)!=null && string.match(regex2)!=null)
+		alert("correct email");
+	else
+		alert("incorrect email");
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX</title>
+</head>
+<body>
+Hello 
+<script type="text/javascript">
+	$.ajax("info.txt").done(function(data){
+		alert("page found");
+	}).fail(function(){
+		alert("page not found");
+	});
+</script>
+</body>
+</html>

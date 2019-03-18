@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<style type="text/css">
+		#green{
+			background: green;
+		}
+		#yellow{
+			background: yellow;
+		}
+		#blue{
+			background: blue;
+		}
+		.box{
+			width: 30px;
+			height: 30px;
+			border-radius: 50%; 
+			position: relative;
+			float: left;
+			margin: 10px;
+		}
+		.clear{
+			clear: all;
+		}
+	</style>
+</head>
+<body>
+<p id="ajir">Hello there</p>
+<button onclick="mt()">Click here</button>
+<button id="tea">Change text</button>
+<p id="po">okay this is my test</p>
+<button id="poy" >style</button>
+<br>
+<p id="green" class="box"></p>
+<p id="yellow" class="box"></p>
+<p id="blue" class="box"></p>
+<br>
+<br>
+<br>
+<input type="text" id="oks">
+<button id="chg">change text</button>
+<p id="popo">this is gonna change</p>
+Check this: <input type="text" id="check">
+<button id="anns">Check</button>
+<br>
+<p id="erww"></p>
+<button id="erwwq">Make a guess</button>
+<div id="testingloop"></div>
+<script type="text/javascript">
+	function mt(){
+		alert("hi");
+	}
+	document.getElementById("tea").onclick=function(){
+		document.getElementById("ajir").innerHTML+="Hey here!\n";
+	}
+	document.getElementById("poy").onclick=function(){
+		document.getElementById("po").style.color="green";
+		document.getElementById("po").style.fontStyle="italic";
+	}
+	document.getElementById("green").onclick=function(){
+		document.getElementById("green").style.display="none";
+	}
+	document.getElementById("yellow").onclick=function(){
+		document.getElementById("yellow").style.display="none";
+	}
+	document.getElementById("blue").onclick=function(){
+		document.getElementById("blue").style.display="none";
+	}
+	document.getElementById("chg").onclick=function(){
+	var tess="";
+	tess+=document.getElementById("oks").value;
+	document.getElementById("popo").innerHTML=tess;
+	}
+	var arr=new Array();
+	arr[0]="hello";
+	arr[1]="sss";
+	var trr=["asa","asasa"];
+	trr.push("aaAqq");
+	trr.splice(1,1,"osssa");
+	console.log(trr);
+	document.getElementById("anns").onclick=function(){
+	var x=document.getElementById("check").value;
+	if(x=="ajit")
+	alert("it's a match");
+	else
+	alert("it's not a match");	}
+	document.getElementById("erwwq").onclick=function(){
+		document.getElementById("erww").innerHTML=Math.floor(Math.random()*6);
+	}
+	var uth="";
+	var aee=["hello","hi","okay","bye"];
+	for(var i=0;i<aee.length;i++)
+		uth=uth+"<p>"+aee[i]+"</p>";
+	document.getElementById("testingloop").innerHTML=uth;
+</script>
+</body>
+</html>

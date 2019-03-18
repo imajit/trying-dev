@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tender</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<style type="text/css">
+	h3{
+		font-weight: normal;
+	    font-family: 'Roboto Mono', monospace;
+	}
+		#bodyback{
+			background-color:  #f0f0f2;
+		}
+		#bemllogo{
+			background-color: #b3ffff;
+			text-align: center;
+			margin: auto 0;
+
+		}
+		#tutoriallogo{
+			cursor: pointer;
+			padding: 5px;
+			background-color: #fff;
+			width: 45%;
+			text-align: center;
+			margin: auto 1px;
+			position: relative;
+			float: left;
+			border-right:1px dotted blue;
+		}
+		#faqlogo{
+			cursor: pointer;
+			background-color: #fff;
+			width: 45%;
+			text-align: center;
+			position: relative;
+			float: right;
+			margin: auto 0;
+		}
+	</style>
+</head>
+<body id="bodyback">
+<div id="bemllogo"><img src="bemllogo.png" alt="Beml Logo"><br><p><h3>Government of India,Ministry of Defence</h3></p></div>
+
+<div id="tutoriallogo" title="To tutorial"><img src="tutoriallogo.png" alt="Tutorial Logo"><br><h3><p>This is a link to the quick tutorial</p><p>guiding you how to fill the eProcurement tender</p><p>and changes needed in System settings</p></h3></div>
+<div id="faqlogo" title="To FAQs"><img src="faqlogo.png"><h3><p>This is a link to search for frequently asked questions</p><p>with their answers and other useful resourcess</p></h3></div>
+</body>
+<script type="text/javascript">
+	document.getElementById("tutoriallogo").onclick =function(){
+		document.location="module1.html";
+	};
+	document.getElementById("faqlogo").onclick =function(){
+		document.location="index.html";		
+	  $( function() {
+    $("#tutoriallogo").tooltip();
+  } );
+	}
+</script>
+</html>

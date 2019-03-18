@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>first page</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		#eew{
+			color: white;
+			padding: .15vw .1vw .15vw .1vw;
+			background-color: #01159B;
+		}
+		#top-bar{
+			color: white;
+			width: auto;
+			background-color: #01159B;
+		}
+		#top-bar-c{
+			padding: .5vw .5vw .5vw .5vw;
+			border-left:.1vw solid #48B2D6;
+ 			margin: 0;
+		}
+		#ttop{
+			margin: 0vw 0vw 0vw 45vw;
+		}
+		#bemllogo{
+			margin: 1vw 2vw 1vw 2vw;
+		}
+		#be{
+			text-align: center;
+			font-size: 2vw;
+			color: #01519E;
+			font-weight: bold;
+		}
+		#hee{
+			text-align: center;
+			margin: 1vw 6vw 1vw 6vw;
+
+		}
+		#teaa{
+			color: #4F4C4C;
+			font-weight: bold;
+		}
+		img{
+			margin: 0;
+		}
+		h4{
+			font-weight: normal;
+		}
+		#ppp{
+			background-color:#01159B;
+			color: white;
+		}
+		ul#hrl li{
+			display: inline;
+			padding: 1vw;
+			margin: 0;
+		}
+		ul#hrl1 li{
+			text-align: center;
+			padding: 1vw .2vw 1vw .2vw;
+			display: inline;
+			border-left:.1vw solid #48B2D6;
+		}
+		ul#drop-downlist li{
+			text-align: center;
+			padding: 1vw .2vw 1vw .2vw;
+			border-left:.1vw solid #48B2D6;	
+		}
+		ul#drop-down-sublist{
+			list-style-type: none;
+		}
+		ul#drop-down-sublist li{
+			padding: 1vw .2vw 1vw .2vw;
+			border-left:.1vw dotted black;		
+		}
+		#drop-down{
+			display: none;
+		}
+		li:hover{
+			background-color: white;
+			color:#01159B;
+		}
+	</style>
+</head>
+<body>
+<div id="top-bar">
+	<table id="ttop">
+		<tr>
+			<td id="top-bar-c">Skip to Main Content</td>
+			<td id="top-bar-c">Accessibiltiy option</td>
+			<td id="top-bar-c">Screen Reader</td>
+			<td id="top-bar-c">test</td>
+			<td id="top-bar-c">Translate to Hindi</td>
+		</tr>
+	</table>
+</div>
+<div id="logoplace">
+	<table>
+	<tr>
+	<td><img src="https://www.bemlindia.in/images/logo_beml1.png" width="255vw" height="147vw" id="bemllogo"></td>
+	<td><p id="hee"><span id="be">BEML LIMITED<br>CIN:L35202KA1964GOI001530</span><br><span id="teaa">Government of India, Ministry of Defence<br>A Miniratna Category-1 Company</span></p></td>
+	<td>
+		<p><img src="https://www.bemlindia.in/images/icon_make.png"><img src="https://www.bemlindia.in/images/icon_swachha.png"></p>
+		<p><input type="text" placeholder="Nothing to search here ; )"><img src="https://www.bemlindia.in/images/search-icon.jpg" width="34vw" height="31vw"></p>
+		<p><h4>Wednesday 26/09/19 05:44 PM</h4></p>
+		<p>
+			<ul id="hrl">
+				<li id="ppp">CAREER</li>
+				<li id="ppp">RTI</li>
+				<li id="ppp">TENDER</li>
+			</ul>
+		</p>
+	</td>
+</tr>
+</table>
+</div>
+<div id="eew">
+	<ul id="hrl1">
+		<li>CORPORATE</li>
+		<li>BUSINESS</li>
+		<li>FACILITIES</li>
+		<li>INVESTORS</li>
+		<li id="tonext1">SUPPLIERS</li>
+		<li>MAKE IN INDIA</li>
+		<li>VIGILANCE</li>
+		<li>INFO DESK</li>
+		<li>CSR</li>
+		<li>CONTACT US</li>
+	</ul>
+</div>
+<div id="drop-down">
+	<table><tr>	
+		<td><ul id="drop-down-sublist">
+			<li>Tender</li> 
+			<li>Intergrity Pact</li>
+			<li>Purchase Manual</li>
+		</ul></td>
+		<td>
+		<ul id="drop-down-sublist">
+		<li>Verndor Registration Procedure</li>
+		<li>Items for Development</li>
+		<li>Supplier Collaboration</li>
+		</ul></td>
+		<td>
+		<ul id="drop-down-sublist">
+		<li>Vendor Registration Form</li>
+		<li id="tonext2">eProcurement(SRM)</li>
+		</ul></td>
+		<td>
+		<ul id="drop-down-sublist">
+		<li>Online Vendor Registration</li>
+		<li>Know your Bill Status</li>
+		</ul></td>
+	</tr>
+</table>
+</div>
+</body>
+	<script type="text/javascript">
+		document.getElementById("tonext1").onclick=function(){
+			document.getElementById("drop-down").style.display="block";
+		};
+		document.getElementById("tonext2").onclick=function(){
+			document.location.replace("index.html");
+		}
+	</script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQUERY</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<style type="text/css">
+	.sqaure{
+		width: 150px;
+		height: 150px;
+		margin: 10px;
+	}
+	#green_c{
+		border-radius: 50%;
+		background: green;
+	}
+	#fadeoutcic{
+		border-radius: 50%;
+		background: green;
+	}
+	#red_s{
+		background: red;
+	}
+	#red_s1{
+		background: red;
+	}
+	#fadeout-text{
+		display: none;
+	}
+</style> 
+</head>
+<body>
+	<div class="sqaure" id="green_c"></div>
+	<div class="sqaure" id="fadeoutcic"></div>
+	<div class="sqaure" id="red_s"></div>
+	<div class="sqaure" id="red_s1"></div>
+	<p id="1t">This is gonna change</p>
+	<p id="2t">This will be shown</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/5X7WWVTrBvM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<br>
+	<p id="fadeout-text">Hey this is gonna fade.</p>
+	<button id="Cll">Click to toggle</button>
+<script type="text/javascript">
+
+	$(".green_c").click(function(){
+		$("#1t").html("Changed");
+		$("#green_c").css("width","25px");
+		$("#green_c").css("background","blue");		
+	});
+	$("#red_s").click(function(){
+		$(this).fadeOut("slow");
+	});
+
+	$("#red_s1").click(function(){
+		$("iframe").attr("src","https://www.youtube.com/watch?v=MG0ohHrULLM");
+	});
+	var teststatus=true;
+	$("#Cll").click(function(){
+		if(teststatus)
+			$("#fadeout-text").fadeOut(function(){
+				teststatus=false;
+			});
+		else
+			$("#fadeout-text").fadeIn(function(){
+				teststatus=true;
+			});
+	});
+	$("#fadeoutcic").click(function(){
+		$(this).animate({
+			width:"400px",
+			height:"100px"
+		},2000,function(){
+			$(this).fadeTo("slow",.33);
+		});
+	});
+</script>
+</body>
+</html>
